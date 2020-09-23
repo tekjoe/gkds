@@ -1,0 +1,124 @@
+.grid__about {
+  margin-bottom: 4rem;
+  &--full-width {
+    margin: 2rem 0 5rem 0;
+    padding: 0;
+    max-width: 100%;
+    @media (min-width: 1024px) {
+      margin: 0 0 8rem 0;
+    }
+  }
+}
+
+.about__masthead {
+  grid-column: 1/-1;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 100%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("../../../../../wp-content/themes/gkds/images/about_masthead.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 325px;
+  h1 {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 3rem;
+    font-size: $h2;
+    position: relative;
+    &:after {
+      content: "";
+      width: 3px;
+      height: 5rem;
+      background-color: $primary;
+      position: absolute;
+      display: block;
+      left: 50%;
+      top: 5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: $h1;
+      &:after {
+        height: 8rem;
+        top: 5.5rem;
+      }
+    }
+    height: 450px;
+  }
+}
+
+.about__history {
+  grid-column: 1/-1;
+  margin-bottom: 4rem;
+  @media (min-width: 1024px) {
+    p {
+      font-size: 1.25rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    grid-column: 3/-3;
+  }
+}
+
+.staff__members {
+  grid-column: 1/-1;
+  @media (min-width: 1200px) {
+    grid-column: 2/-2;
+  }
+}
+
+.staff__employee {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    &:nth-of-type(2n) {
+      flex-direction: row-reverse;
+      .staff__bio {
+        margin-left: 0;
+        margin-right: 3rem;
+      }
+    }
+  }
+}
+
+.staff__image,
+.staff__bio {
+  flex: 1;
+}
+
+.staff__image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+  @media (min-width: 1024px) {
+    height: auto;
+  }
+}
+
+.staff__bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2 {
+    margin: 1rem 0;
+    font-size: $h3;
+  }
+  @media (min-width: 768px) {
+    margin-left: 3rem;
+  }
+  @media (min-width: 1024px) {
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}

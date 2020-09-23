@@ -1,0 +1,659 @@
+.button {
+  background: $primary;
+  color: black;
+  font-size: 14.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  display: inline-block;
+}
+
+.calendar-button {
+  background: $primary;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+button.button {
+  background: $primary;
+  color: black;
+  font-size: 14.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 4rem;
+  display: inline-block;
+  border: none;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.button.cta {
+  border: 1px solid $primary;
+  background: none;
+  padding: 1rem;
+  color: $white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 1rem;
+  margin: 0 2rem;
+  &__title {
+    grid-column: 1/-1;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    padding: 0 2rem;
+    margin-bottom: 10rem;
+    max-width: 1280px;
+  }
+  @media (min-width: 1920px) {
+    max-width: 1440px;
+    padding: 0;
+  }
+}
+
+.grid__masthead {
+  margin-bottom: 12rem;
+  @media (min-width: 1024px) {
+    margin-top: 10%;
+    height: 66vh;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 24rem;
+    margin-top: 15%;
+  }
+}
+
+.grid__schedule {
+  margin: 4rem 2rem;
+  @media (min-width: 1200px) {
+    margin-bottom: 10rem;
+  }
+}
+
+.masthead {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 52%;
+  &__call-to-action {
+    margin-bottom: 2rem;
+    flex-basis: 50%;
+    h1 {
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      font-size: $h3;
+      font-family: $alt-title-font;
+    }
+    p {
+      margin-bottom: 1.25rem;
+      max-width: 40ch;
+    }
+  }
+  &__call-to-action.video {
+    position: relative;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+  &__scroll-hint {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+  @media (min-width: 768px) {
+    margin-top: 12%;
+    &__call-to-action {
+      align-self: flex-start;
+      h1 {
+        font-size: $h2;
+      }
+      p {
+        font-size: $h5;
+      }
+    }
+    &__scroll-hint {
+      padding-top: 4rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    &__call-to-action {
+      align-self: auto;
+    }
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 0;
+    &__call-to-action {
+      p {
+        font-size: $h5;
+      }
+    }
+  }
+}
+.video-overlay {
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 0%, 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  button {
+    background: none;
+    border: none;
+  }
+}
+
+.scroll-hint {
+  &__container {
+    display: block;
+  }
+}
+
+#arrow {
+  animation: arrow 2s infinite ease-in-out;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.classes-adult,
+.classes-children {
+  display: flex;
+  grid-column: 1/-1;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    flex-wrap: initial;
+  }
+}
+
+.grid__classes {
+  margin-bottom: 4rem;
+  h2 {
+    font-size: $h3;
+  }
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: $h2;
+    }
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 10rem;
+  }
+}
+
+.grid__testimonials {
+  margin: 0 0 4rem 0;
+  padding: 0;
+  max-width: 100%;
+  @media (min-width: 1200px) {
+    margin: 0 0 10rem 0;
+  }
+}
+
+.grid__staff {
+  margin-bottom: 4rem;
+  @media (min-width: 1200px) {
+    margin-bottom: 10rem;
+  }
+}
+
+.class {
+  height: 425px;
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/choreo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  margin-bottom: 1rem;
+  &--private {
+    background-image: url("../images/private_dance_lessons.png");
+  }
+  &--group {
+    background-image: url("../images/home-page/adult_group_classes.jpg");
+  }
+  &--choreo {
+    background-image: url("../images/home-page/adult_choreography.jpg");
+  }
+  &--private-kids {
+    background-image: url("../images/home-page/kids_classes.jpeg");
+  }
+  &--group-kids {
+    background-image: url("../images/home-page/kids_group_classes.jpg");
+  }
+  .class__content {
+    > * {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    position: relative;
+    z-index: 3;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h4 {
+      text-transform: uppercase;
+    }
+    p {
+      color: $white;
+      max-width: 35ch;
+    }
+    a {
+      text-transform: uppercase;
+      color: $primary;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
+  @media (min-width: 768px) {
+    padding: 2rem;
+    flex: initial;
+  }
+  @media (min-width: 1024px) {
+    margin-right: 1rem;
+    flex: 1;
+  }
+}
+
+.class-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+  background: hsla(0, 0%, 22%, 85%);
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/-1;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  &__image {
+    position: relative;
+    flex: 1;
+    margin-bottom: 2rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      text-transform: uppercase;
+      font-size: $h3;
+    }
+    p {
+      max-width: 50ch;
+    }
+    & > * {
+      margin-bottom: 1.5rem;
+    }
+    .button {
+      text-align: center;
+    }
+  }
+  @media (min-width: 1024px) {
+    margin-bottom: 5rem;
+    flex-direction: row;
+    &__content {
+      margin-left: 2rem;
+      h2 {
+        max-width: 50%;
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.125rem;
+      }
+      .button {
+        align-self: flex-start;
+      }
+    }
+    &--reverse {
+      flex-direction: row-reverse;
+      .feature__content {
+        align-items: flex-end;
+        margin-left: 0;
+        margin-right: 2rem;
+        p,
+        h2 {
+          text-align: right;
+        }
+        .button {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 0%, 25%);
+}
+
+.testimonials {
+  grid-column: 1/-1;
+  width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 100%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("../images/testimonial_bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.glide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  .testimonial {
+    max-width: 40ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    &__image {
+      img {
+        display: block;
+        height: 75px;
+        width: 75px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+    &__body {
+      font-style: italic;
+      font-size: 1.125rem;
+      color: white;
+      padding: 0 2rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    height: 600px;
+    .testimonial {
+      max-width: 50%;
+      &__image {
+        img {
+          height: 125px;
+          width: 125px;
+        }
+      }
+      &__body {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+.staff {
+  grid-column: 1/-1;
+  .grid__title {
+    font-size: $h3;
+  }
+  &__flex {
+    display: flex;
+    flex-direction: column;
+  }
+  &__member {
+    position: relative;
+    flex: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    &:first-of-type {
+      margin-bottom: 1rem;
+    }
+  }
+  &__overlay {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.75) 5%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    h3 {
+      text-transform: uppercase;
+      font-size: $h4;
+      margin-bottom: 0.5rem;
+    }
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $primary;
+      font-weight: bold;
+    }
+  }
+  @media (min-width: 768px) {
+    &__flex {
+      flex-direction: row;
+    }
+    &__member {
+      &:first-of-type {
+        margin-right: 1rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    &__flex {
+      flex-direction: row;
+    }
+    &__member {
+      height: 600px;
+      &:first-of-type {
+        margin-right: 1rem;
+        margin-bottom: 0;
+      }
+      img {
+        object-position: top;
+      }
+    }
+    &__overlay {
+      padding: 2rem;
+      h3 {
+        font-size: $h3;
+      }
+      a {
+        font-size: $h5;
+      }
+    }
+  }
+}
+
+.schedule {
+  grid-column: 1/-1;
+  margin-bottom: 4rem;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    background: darken($color: #242428, $amount: 4);
+    & > * {
+      flex: 1;
+      display: block;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: white;
+      font-weight: bold;
+    }
+    .class__name {
+      flex: 2;
+    }
+  }
+  &__class:nth-of-type(2n) > .class__header {
+    background: darken($color: #242428, $amount: 2);
+  }
+  @media (min-width: 1024px) {
+    grid-column: 2/-2;
+    &__header > * {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+// Simple calendar
+.simcal-calendar {
+  grid-column: 1/-1;
+}
+.simcal-event-title {
+  color: white;
+  font-size: 0.83rem;
+}
+
+.qtip {
+  p,
+  .simcal-event-title {
+    color: black;
+    font-size: 1rem;
+  }
+  p {
+    font-size: 14.4px;
+  }
+}
+
+// WooCommerce Bookings Calendar Plugin Styling
+#wbc-calendar {
+  grid-column: 1/-1;
+}
+.fc-today {
+  background: hsla(0, 0%, 100%, 0.2) !important;
+}
+
+.fc-center h2 {
+  font-size: 2.5rem;
+}
+
+.fc-day-header {
+  span {
+    font-size: 1.125rem;
+    padding: 0.5rem;
+    display: block;
+  }
+}
+
+.class__header {
+  display: flex;
+  justify-content: space-between;
+  background: darken($color: #242428, $amount: 4);
+  cursor: pointer;
+  & > * {
+    flex: 1;
+    display: block;
+    padding: 1rem;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  .class__name {
+    flex: 2;
+  }
+  .class__clear {
+    img {
+      height: 1rem;
+      display: block;
+      margin-left: auto;
+    }
+  }
+  @media (min-width: 768px) {
+    & > * {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.class__body {
+  background: darken($color: #242428, $amount: 3);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  .body__content {
+    margin: 1rem;
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  @media (min-width: 768px) {
+    .body__content p {
+      font-size: 1rem;
+    }
+  }
+}

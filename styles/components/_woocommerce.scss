@@ -1,0 +1,335 @@
+.woocommerce {
+  grid-column: 1/-1;
+  margin: 4rem 0;
+  .page-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .woocommerce-result-count,
+  .woocommerce-ordering {
+    display: none;
+  }
+  div[class*="post-"] {
+    .wp-post-image {
+      height: 300px;
+      object-fit: cover;
+    }
+    .wc-bookings-booking-form-button {
+      border: none;
+    }
+    .product_meta {
+      display: none;
+    }
+    .woocommerce-tabs {
+      margin-top: 1rem;
+      .wc-tabs {
+        list-style-type: none;
+      }
+      h2 {
+        margin-bottom: 1rem;
+      }
+    }
+    .related {
+      display: none;
+    }
+  }
+  ul.products li.product a.woocommerce-loop-product__link h2 {
+    font-size: 1.563rem !important;
+  }
+  ul.products li.product a.button.product_type_booking {
+    display: block;
+    text-align: center;
+    border-radius: 0;
+    background: $primary;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.35s ease-in-out;
+    cursor: pointer;
+  }
+  button.button.wc-bookings-booking-form-button.disabled {
+    cursor: not-allowed;
+    background: $primary;
+    color: $background;
+    &:hover {
+      background: $primary;
+      color: $background;
+    }
+  }
+  button.button.wc-bookings-booking-form-button {
+    display: block;
+    text-align: center;
+    border-radius: 0;
+    background: $primary;
+    color: $background;
+    padding: 1rem 4rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.35s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background: lighten($color: $primary, $amount: 20%);
+      color: $background;
+    }
+  }
+  @media (min-width: 1024px) {
+    margin: 6rem 0;
+    .page-title {
+      font-size: 4rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.product {
+  .summary {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  .wc-bookings-booking-form .wc-bookings-booking-cost {
+    margin: 0;
+  }
+  .description_tab {
+    color: black;
+  }
+  #wc-bookings-booking-form {
+    label {
+      font-size: 1.5rem;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  }
+  #wc_bookings_field_persons {
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .answer p {
+    @media (min-width: 1024px) {
+      font-size: 1.25rem;
+    }
+  }
+}
+/* 
+   Modify the color styles of the WooCommerce Bookings datepicker calendar.
+   Add any/all of these styles to your theme's custom CSS, but be sure to change
+   the color hex codes to your choice. They're all black here.
+*/
+
+.wc-bookings-booking-form,
+.wc-bookings-booking-form fieldset {
+  border: none;
+  padding: 0;
+}
+
+.wc-bookings-booking-cost {
+  color: $background;
+}
+/* Month header background color */
+#wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker-header {
+  background-color: #18181b !important;
+}
+
+/* Previous/Next month arrow background color */
+#wc-bookings-booking-form
+  .wc-bookings-date-picker
+  .ui-datepicker
+  .ui-datepicker-next,
+#wc-bookings-booking-form
+  .wc-bookings-date-picker
+  .ui-datepicker
+  .ui-datepicker-prev {
+  background-color: #000000;
+}
+
+/* Previous/Next month arrows if not allowed, and calendar dates that are not available */
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+  opacity: 0.35;
+}
+
+/* Days of the week header background color */
+.ui-datepicker-calendar thead {
+  background-color: #000000;
+}
+
+/* Days of the week header font color */
+#wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker th {
+  color: #000000;
+}
+
+/* Past calendar days background color (not available) */
+.ui-datepicker-calendar tbody {
+  background-color: #000000;
+}
+
+/* Available calendar days background color */
+#wc-bookings-booking-form
+  .wc-bookings-date-picker
+  .ui-datepicker
+  td.bookable
+  a {
+  background-color: #000000 !important;
+}
+
+/* Available calendar day hover background color */
+#wc-bookings-booking-form
+  .wc-bookings-date-picker
+  .ui-datepicker
+  td.bookable
+  a:hover {
+  background-color: #000000 !important;
+}
+
+/* Fully booked calendar days */
+.wc-bookings-date-picker .ui-datepicker td.fully_booked a,
+.wc-bookings-date-picker .ui-datepicker td.fully_booked span {
+  background-color: #000000 !important;
+}
+
+/* Days not bookable based on the availability rules */
+.wc-bookings-date-picker .ui-datepicker td.not_bookable {
+  background-color: #ffffff !important;
+}
+
+/* Today's date on calendar background color */
+#wc-bookings-booking-form
+  .wc-bookings-date-picker
+  .ui-datepicker
+  td.ui-datepicker-today
+  a {
+  background-color: #000000 !important;
+}
+
+/* Time Blocks */
+#wc-bookings-booking-form .block-picker li a {
+  background-color: #18181b !important;
+  color: #ffffff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Time Blocks Hover */
+#wc-bookings-booking-form .block-picker li a:hover {
+  background-color: darken(#18181b, 20%) !important;
+}
+
+/* Selected Date*/
+#wc-bookings-booking-form
+  .wc-bookings-date-picker
+  .ui-datepicker
+  td.ui-datepicker-current-day
+  a {
+  background-color: #000000 !important;
+}
+
+/* Selected Time Block */
+#wc-bookings-booking-form .block-picker li a.selected {
+  background: $primary !important;
+  color: #18181b !important;
+}
+
+@media (min-width: 768px) {
+  .woocommerce {
+    div[class*="post-"] {
+      display: flex;
+      flex-wrap: wrap;
+      .wp-post-image {
+        height: auto;
+      }
+      .woocommerce-product-gallery,
+      .summary {
+        flex-basis: 50%;
+      }
+      h2 {
+        margin-bottom: 1rem;
+      }
+      .summary {
+        padding: 0 2rem 2rem 2rem;
+        h1 {
+        }
+      }
+      .cart {
+        button.button {
+          border: none;
+          margin-bottom: 1rem;
+        }
+      }
+      .woocommerce-tabs {
+        flex-basis: 1;
+      }
+    }
+  }
+}
+
+// WooCommerce Cart Page & Checkout Form
+.grid__cart > .woocommerce {
+  background: hsla(0, 0%, 0%, 15%);
+}
+
+.woocommerce-cart-form {
+  &__cart-item {
+    .product-name a {
+      color: $primary;
+    }
+  }
+}
+
+.wc-proceed-to-checkout > a.checkout-button.button.alt {
+  background: $primary;
+  color: black;
+  text-transform: unset;
+}
+
+.cart_totals {
+  padding: 1rem;
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+// WooCommerce Checkout Page & Form
+.grid__checkout > .woocommerce {
+  background: #18181b;
+  padding: 1rem;
+}
+
+.woocommerce-checkout {
+  #order_review_heading {
+    margin: 1rem 0;
+  }
+  .input-text {
+    background: hsl(240, 5%, 15%);
+    padding: 0.5rem 1rem;
+    color: white;
+    margin-bottom: 1rem;
+    border: none;
+    font-size: 1rem;
+    font-family: $body-font;
+  }
+  table.shop_table {
+    border: 1px solid hsl(240, 5%, 15%);
+  }
+  textarea {
+    resize: vertical;
+  }
+}
+
+.woocommerce-checkout-payment#payment {
+  background: darken(#18181b, 2%);
+  .woocommerce-privacy-policy-link {
+    color: $primary;
+  }
+  #place_order {
+    background: $primary;
+    color: black;
+    text-transform: unset;
+  }
+}

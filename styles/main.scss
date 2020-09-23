@@ -1,0 +1,27 @@
+@import "./colors";
+@import "./typography";
+@import "./base";
+
+@import "glide/glide.core.scss";
+@import "glide/glide.theme.scss";
+
+@import "./components/desktop_navigation";
+@import "./components/embellishments";
+@import "./components/main";
+@import "./components/footer";
+@import "./components/woocommerce";
+@import "./components/shtf";
+
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/baila";
+@import "./pages/contact";
+@import "./pages/classes";
+@import "./pages/adult-classes";
+
+html {
+  scroll-behavior: smooth;
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
