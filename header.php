@@ -50,7 +50,8 @@
           <li class="menu-item"><a href="<?php echo site_url('/about'); ?>">About Us</a></li>
           <li class="menu-item"><a href="<?php echo site_url('/classes'); ?>">Classes</a></li>
           <li class="menu-item"><a href="<?php echo site_url('/baila-milwaukee'); ?>">Baila Milwaukee</a></li>
-          <li><a href="https://squareup.com/gift/ZTW903YCEDYTR/order" rel="noopener noreferrer" target="_blank">Gift
+          <li class="menu-item"><a href="https://squareup.com/gift/ZTW903YCEDYTR/order" rel="noopener noreferrer"
+              target="_blank">Gift
               Cards</a></li>
           <li class="menu-item"><a href="<?php echo site_url('/contact-us'); ?>">Contact Us</a></li>
         </ul>
