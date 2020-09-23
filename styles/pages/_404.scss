@@ -1,0 +1,15 @@
+.grid__404 {
+  margin-top: 10%;
+  height: 100vh;
+  @media (min-width: 1200px) {
+    margin-top: 15%;
+  }
+}
+
+.not-found {
+  grid-column: 1/-1;
+  text-align: center;
+  h2 {
+    margin-bottom: 1rem;
+  }
+}

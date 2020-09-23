@@ -4,7 +4,6 @@
   <?php get_template_part('partials/masthead'); ?>
   <?php get_template_part('partials/adult-classes'); ?>
   <?php get_template_part('partials/childrens-classes'); ?>
-
   <section class="grid grid__features">
     <div class="features">
       <div class="feature">

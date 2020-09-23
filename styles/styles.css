@@ -2235,6 +2235,24 @@ button.button {
   margin-bottom: 1.25rem;
 }
 
+.grid__404 {
+  margin-top: 10%;
+  height: 100vh;
+}
+@media (min-width: 1200px) {
+  .grid__404 {
+    margin-top: 15%;
+  }
+}
+
+.not-found {
+  grid-column: 1/-1;
+  text-align: center;
+}
+.not-found h2 {
+  margin-bottom: 1rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
