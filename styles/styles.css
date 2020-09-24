@@ -1127,11 +1127,16 @@ button.button {
   margin-bottom: 1rem;
   text-align: center;
 }
-.class .class__content h4 {
-  text-transform: uppercase;
-}
 .class .class__content p {
   color: white;
+}
+.class .class__content p.class-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Advent Pro", sans-serif;
+}
+.class .class__content p.class-description {
   max-width: 35ch;
 }
 .class .class__content a {

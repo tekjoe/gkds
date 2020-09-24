@@ -47,7 +47,7 @@
             We are the hosts of Baila Milwaukee, an annual dance event that is one of Milwaukee's hottest social
             gatherings.
           </p>
-          <a href="<?php echo site_url('/baila-milwaukee'); ?>" class="button">Learn More</a>
+          <a href="<?php echo site_url('/baila-milwaukee'); ?>" class="button">About Baila</a>
         </div>
       </div>
     </div>

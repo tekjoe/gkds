@@ -275,11 +275,16 @@ button.button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    h4 {
-      text-transform: uppercase;
-    }
     p {
       color: $white;
+    }
+    p.class-title {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: $h4;
+      font-family: $title-font;
+    }
+    p.class-description {
       max-width: 35ch;
     }
     a {
