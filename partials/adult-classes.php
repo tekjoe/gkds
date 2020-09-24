@@ -17,7 +17,7 @@
     </div>
     <div class="class class--group">
       <div class="class-overlay"><img
-          src="<?php echo get_template_directory_uri() . '/images/home-page/'; ?>adult_group_classes.jpg"
+          src="<?php echo get_template_directory_uri() . '/images/home-page/'; ?>adult_group.jpg"
           alt="Adult Group Classes">
       </div>
       <div class="class__content">
@@ -32,7 +32,7 @@
     </div>
     <div class="class class--choreo">
       <div class="class-overlay"><img
-          src="<?php echo get_template_directory_uri() . '/images/home-page/'; ?>adult_choreography.jpg"
+          src="<?php echo get_template_directory_uri() . '/images/home-page/'; ?>adult_choreo.jpg"
           alt="Adult Choreography Classes">
       </div>
       <div class="class__content">
