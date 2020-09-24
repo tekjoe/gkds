@@ -1092,27 +1092,11 @@ button.button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/choreo.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 3rem;
   margin-bottom: 1rem;
-}
-.class--private {
-  background-image: url("../images/private_dance_lessons.png");
-}
-.class--group {
-  background-image: url("../images/home-page/adult_group_classes.jpg");
-}
-.class--choreo {
-  background-image: url("../images/home-page/adult_choreography.jpg");
-}
-.class--private-kids {
-  background-image: url("../images/home-page/kids_classes.jpeg");
-}
-.class--group-kids {
-  background-image: url("../images/home-page/kids_group_classes.jpg");
 }
 .class .class__content {
   position: relative;
@@ -1168,7 +1152,14 @@ button.button {
   left: 0;
   z-index: 1;
   position: absolute;
-  background: rgba(56, 56, 56, 0.85);
+  background: #383838;
+}
+.class-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: opacity(33%);
 }
 
 .features {
@@ -1732,6 +1723,7 @@ button.button {
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 4rem;
+  justify-content: center;
 }
 @media (min-width: 1024px) {
   .baila__guest-artists {
@@ -1742,7 +1734,7 @@ button.button {
 .guest-artist {
   position: relative;
   flex-basis: 100%;
-  height: 325px;
+  height: 250px;
 }
 .guest-artist__overlay {
   position: absolute;
@@ -1758,8 +1750,7 @@ button.button {
 }
 @media (min-width: 768px) {
   .guest-artist {
-    height: 450px;
-    flex-basis: calc(50% - 0.5rem);
+    flex-basis: calc(33% - 2rem);
   }
 }
 

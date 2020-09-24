@@ -16,7 +16,7 @@
   <section class="grid grid__baila">
     <div class="baila__history">
       <h1>Baila Milwaukee</h1>
-      <p class="subtitle">Friday and Saturday, August 23rd and 24th, 2020</p>
+      <p class="subtitle">Date TBD</p>
       <p>
         Gustavo Krystal Dance has been celebrating each year of dance with their Gala Baila Milwaukee, starting their
         first anniversary in 2015. The first anniversary of Gustavo Krystal Dance was a cause for celebration. The Gala

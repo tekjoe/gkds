@@ -242,27 +242,11 @@ button.button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/choreo.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 3rem;
   margin-bottom: 1rem;
-  &--private {
-    background-image: url("../images/private_dance_lessons.png");
-  }
-  &--group {
-    background-image: url("../images/home-page/adult_group_classes.jpg");
-  }
-  &--choreo {
-    background-image: url("../images/home-page/adult_choreography.jpg");
-  }
-  &--private-kids {
-    background-image: url("../images/home-page/kids_classes.jpeg");
-  }
-  &--group-kids {
-    background-image: url("../images/home-page/kids_group_classes.jpg");
-  }
   .class__content {
     > * {
       margin-bottom: 1rem;
@@ -314,7 +298,14 @@ button.button {
   left: 0;
   z-index: 1;
   position: absolute;
-  background: hsla(0, 0%, 22%, 85%);
+  background: hsl(0, 0%, 22%);
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: opacity(33%);
+  }
 }
 
 .features {
