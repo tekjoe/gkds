@@ -13,10 +13,10 @@
         Private classes offer the advantage of having a dance instructor just for you, giving you the opportunity to
         learn exactly what you want at your pace. Private lessons are by far the best way to learn how to dance. Private
         lessons are scheduled by phone or in person, so call us today to set up your first private lesson!</p>
-      <a href="/registration" class="button">Check Availability</a>
+      <a href="/registration" class="button">Get in Touch</a>
     </div>
     <div class="childrens-classes__fw-image">
-      <img src="<?php echo get_template_directory_uri() . '/images/'; ?>dance_kids_2.png"
+      <img src="<?php echo get_template_directory_uri() . '/images/home-page/'; ?>kids_classes.jpeg"
         alt="Gustavo Krystal Dance Studio Private Lessons" class="fw-image">
     </div>
     <div class="childrens-classes__class" id="childrens-group-classes">
@@ -24,17 +24,24 @@
       <p>We offer both Drop-in classes and choreography groups in a group class setting. There is no partner needed for
         any of our group classes. Please see our two options below to decide which group class option would be best for
         you.</p>
-      <div class="group-classes">
-        <div class="sub-class">
-          <h3>Drop-in Groups</h3>
-          <p>Our drop-in classes are perfect for new students who are just getting into the dance scene or for students
-            who can not make a weekly commitment. We offer 3 discipline of dance on a weekly basis. See each class
-            description below and just drop-in anytime!​</p>
-        </div>
-        <div class="sub-class"></div>
+      <div class="sub-class">
+        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>childrens_latin_dance.jpg"
+          alt="Children's Latin Dance" />
+        <h3>Children's Latin Dance</h3>
+        <p>Latin dance class for kids. This class teaches leading and following as well as basic footwork in popular
+          Latin dances usually focusing on salsa.</p>
+        <a href="/registration" class="button">Register Today</a>
+      </div>
+      <div class="sub-class">
+        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>childrens_ballet_jazz.jpg"
+          alt="Children's Ballet/Jazz" />
+        <h3>Children's Ballet/Jazz</h3>
+        <p>Latin dance class for kids. This class teaches leading and following as well as basic footwork in popular
+          Latin dances usually focusing on salsa. </p>
+        <a href="/registration" class="button">Register Today</a>
       </div>
     </div>
-    <div class="childrens-classes__class">
+    <!-- <div class="childrens-classes__class">
       <h2>Drop-in Classes</h2>
       <div class="faq-list">
         <div class="faq">
@@ -49,7 +56,7 @@
           <a href="/registration" class="button">Check Availability</a>
         </div>
         <div class="faq">
-          <p>Children's Balet/Jazz
+          <p>Children's Ballet/Jazz
           </p>
         </div>
         <div class="answer">
@@ -61,6 +68,6 @@
           <a href="/registration" class="button">Check Availability</a>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
   <?php get_footer(); ?>

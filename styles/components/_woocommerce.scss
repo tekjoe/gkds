@@ -333,3 +333,55 @@
     text-transform: unset;
   }
 }
+
+// WooCommerce My Account Page
+.grid__my-account > .woocommerce {
+  display: flex;
+  flex-direction: column;
+  form.woocommerce-form {
+    width: 100%;
+    .woocommerce-Input {
+      padding: 0.5rem 1rem;
+      border: none;
+      background: lighten(#242428, 20%);
+      color: white;
+      font-size: 1rem;
+    }
+  }
+  .woocommerce-MyAccount-content {
+    padding: 1rem;
+    background: hsla(0, 0%, 0%, 15%);
+  }
+  .woocommerce-MyAccount-navigation ul {
+    background: hsla(0, 0%, 0%, 15%);
+    border: 1px solid lighten($background, 5%);
+    list-style-type: none;
+    margin-bottom: 2rem;
+    li a {
+      padding: 0.5rem;
+      display: block;
+      text-decoration: none;
+      color: white;
+      border-bottom: 1px solid lighten($background, 5%);
+    }
+  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    h2 {
+      flex-basis: 100%;
+    }
+    .woocommerce-MyAccount-navigation {
+      flex: 1;
+    }
+    .woocommerce-MyAccount-content {
+      flex: 3;
+      margin-left: 3rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    form.woocommerce-form {
+      width: 50%;
+    }
+  }
+}
