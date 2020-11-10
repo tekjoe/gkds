@@ -10,7 +10,7 @@
         <p class="class-description">
           Perfect for the student who wants to speed up their learning process or would like to compete or perform.
         </p>
-        <a href="<?php echo site_url('/childrens-classes#childrens-private-classes') ?>">Get Started</a>
+        <a href="<?php echo site_url('/childrens-classes') ?>">Get Started</a>
       </div>
     </div>
     <div class="class class--group-kids">
@@ -22,7 +22,7 @@
         <p class="class-description">
           Group classes are a great way for your child to discover self-expression and confidence.
         </p>
-        <a href="<?php echo site_url('/childrens-classes#childrens-group-classes') ?>">Get Started</a>
+        <a href="<?php echo site_url('/childrens-classes') ?>">Get Started</a>
       </div>
     </div>
   </div>

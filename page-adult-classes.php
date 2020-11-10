@@ -13,13 +13,82 @@
         Private classes offer the advantage of having a dance instructor just for you, giving you the opportunity to
         learn exactly what you want at your pace. Private lessons are by far the best way to learn how to dance. Private
         lessons are scheduled by phone or in person, so call us today to set up your first private lesson!</p>
-      <a href="/registration" class="button">Get in Touch</a>
+      <a href="<?php echo site_url('/registration'); ?>" class="button">Schedule by Phone</a>
     </div>
     <div class="adult-classes__fw-image">
       <img src="<?php echo get_template_directory_uri() . '/images/'; ?>classes_placeholder_2.jpg"
         alt="Gustavo Krystal Dance Studio Private Lessons" class="fw-image">
     </div>
-    <div class="adult-classes__class" id="adult-group-classes">
+
+
+
+    <div class="class-grid">
+      <h2 class="title">Drop-in Group Classes</h2>
+      <p class="description">Our drop in classes are perfect for new students who are just getting into the dance scene
+        or for students who can not make a weekly commitment. We offer 3 disciplines of dance on a weekly basis. See
+        each class description below and just drop-in anytime!</p>
+      <div class="column">
+        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>childrens_latin_dance.jpg"
+          alt="Children's Latin Dance" />
+        <h3>Dance Technique</h3>
+        <p>Latin dance class for kids. This class teaches leading and following as well as basic footwork in popular
+          Latin dances usually focusing on salsa.</p>
+        <a href="<?php echo site_url('/registration'); ?>" class="button">Check Availability</a>
+      </div>
+      <div class="column">
+        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>childrens_ballet_jazz.jpg"
+          alt="Children's Ballet/Jazz" />
+        <h3>Bachata Fundamentals</h3>
+        <p>Our ballet/jazz classes for children teach proper dance technique and dance training from a young age all the
+          way up to adults. We work on strength, stretching, ballet and jazz terminology, isolating, and overall
+          corporal awareness and coordination.</p>
+        <a href="<?php echo site_url('/registration'); ?>" class="button">Check Availability</a>
+      </div>
+      <div class="column">
+        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>childrens_ballet_jazz.jpg"
+          alt="Children's Ballet/Jazz" />
+        <h3>Salsa Fundamentals</h3>
+        <p>Our ballet/jazz classes for children teach proper dance technique and dance training from a young age all the
+          way up to adults. We work on strength, stretching, ballet and jazz terminology, isolating, and overall
+          corporal awareness and coordination.</p>
+        <a href="<?php echo site_url('/registration'); ?>" class="button">Check Availability</a>
+      </div>
+    </div>
+
+    <div class="adult-classes__fw-image">
+      <img src="<?php echo get_template_directory_uri() . '/images/'; ?>classes_placeholder.jpg"
+        alt="Gustavo Krystal Dance Studio Group Lessons" class="fw-image">
+    </div>
+
+    <div class="class-grid">
+      <h2 class="title">Choreography Classes</h2>
+      <p class="description">Our choreography groups are perfect for those wanting to take their dance to the next
+        level. Our choreography groups meet twice a week and have the opportunity to perform as a team. See the groups
+        we offer below and call ahead to register.</p>
+      <div class="column">
+        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>childrens_latin_dance.jpg"
+          alt="Children's Latin Dance" />
+        <h3>Ladies Latin Styling</h3>
+        <p>Latin dance class for kids. This class teaches leading and following as well as basic footwork in popular
+          Latin dances usually focusing on salsa.</p>
+        <a href="<?php echo site_url('/registration'); ?>" class="button">Call to Register</a>
+      </div>
+      <div class="column">
+        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>childrens_ballet_jazz.jpg"
+          alt="Children's Ballet/Jazz" />
+        <h3>Salsa 1, 2, and 3</h3>
+        <p>Our ballet/jazz classes for children teach proper dance technique and dance training from a young age all the
+          way up to adults. We work on strength, stretching, ballet and jazz terminology, isolating, and overall
+          corporal awareness and coordination.</p>
+        <a href="<?php echo site_url('/registration'); ?>" class="button">Call to Register</a>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- <div class="adult-classes__class" id="adult-group-classes">
       <h2>Group Dance Classes</h2>
       <p>We offer both Drop-in classes and choreography groups in a group class setting. There is no partner needed for
         any of our group classes. Please see our two options below to decide which group class option would be best for
@@ -38,12 +107,9 @@
             below and call ahead to register. </p>
         </div>
       </div>
-    </div>
-    <div class="adult-classes__fw-image">
-      <img src="<?php echo get_template_directory_uri() . '/images/'; ?>classes_placeholder.jpg"
-        alt="Gustavo Krystal Dance Studio Group Lessons" class="fw-image">
-    </div>
-    <div class="adult-classes__class">
+    </div> -->
+
+    <!-- <div class="adult-classes__class">
       <h2>Drop-in Classes</h2>
       <div class="faq-list">
         <div class="faq">
@@ -55,7 +121,7 @@
             Improve your overall dance technique that will help you in any style of dance. We work with a ballet/jazz
             base to improve flexibility, strength, center of balance and much more.
           </p>
-          <a href="/registration" class="button">Check Availability</a>
+          <a href="<?php echo site_url('/registration'); ?>" class="button">Check Availability</a>
         </div>
         <div class="faq">
           <p>Bachata Dance Class
@@ -66,7 +132,7 @@
             In this class we teach the bachata basics and additional footwork as well as partner work. We teach our
             students patterns that you can take social dancing for your next night out on the town.
           </p>
-          <a href="/registration" class="button">Check Availability</a>
+          <a href="<?php echo site_url('/registration')?>" class="button">Check Availability</a>
         </div>
         <div class="faq">
           <p>Salsa Dance Class
@@ -77,7 +143,7 @@
             In this high paced salsa group class, we will definitely get you moving. We teach the proper techniques for
             salsa footwork as well as turn patterns and how to properly lead and follow.
           </p>
-          <a href="/registration" class="button">Check Availability</a>
+          <a href="<?php echo site_url('/registration'); ?>" class="button">Check Availability</a>
         </div>
       </div>
     </div>
@@ -95,7 +161,7 @@
             their knowledge of salsa movement as well as providing performance opportunities and well as competition
             opportunities in the higher levels. All groups meet twice weekly. Call to register today!
           </p>
-          <a href="/registration" class="button">Check Availability</a>
+          <a href="<?php echo site_url('/registration'); ?>" class="button">Check Availability</a>
         </div>
         <div class="faq">
           <p>Ladies Latin Styling
@@ -110,9 +176,9 @@
             recommend those who plan on performing to attend our drop-in technique classes. Call to register for this
             class or to see when our next choreography begins.
           </p>
-          <a href="/registration" class="button">Check Availability</a>
+          <a href="<?php echo site_url('/registration'); ?>" class="button">Check Availability</a>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
   <?php get_footer(); ?>

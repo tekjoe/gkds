@@ -12,7 +12,7 @@
           Perfect for the student who wants to speed up their learning
           process or would like to compete or perform.
         </p>
-        <a href="<?php echo site_url('/classes#adult-classes') ?>">Get Started</a>
+        <a href="<?php echo site_url('/adult-classes') ?>">Get Started</a>
       </div>
     </div>
     <div class="class class--group">
@@ -27,7 +27,7 @@
           class setting. There is no partner needed for any of our group
           classes.
         </p>
-        <a href="<?php echo site_url('/classes#adult-classes') ?>">Get Started</a>
+        <a href="<?php echo site_url('/adult-classes') ?>">Get Started</a>
       </div>
     </div>
     <div class="class class--choreo">
@@ -41,7 +41,7 @@
           Our Choreography groups are perfect for those wanting to take
           their dance to the next level.
         </p>
-        <a href="<?php echo site_url('/classes#adult-classes') ?>">Get Started</a>
+        <a href="<?php echo site_url('/adult-classes') ?>">Get Started</a>
       </div>
 
     </div>

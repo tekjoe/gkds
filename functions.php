@@ -53,9 +53,9 @@ add_action('after_setup_theme', 'woocommerce_support');
 add_filter('woocommerce_product_add_to_cart_text', 'customize_shop_button_text', 10, 2);
 
 
-// Add Phone Registration information to WooCommerce Shop Page
+
 function show_phone_registration()
 {
-    echo "<div class='phone-registration'><h2>Register by Phone</h2><p>If you would like to register for one of our monthly classes, please call us to complete your registration. We would like each student to be placed in a class that is appropriate for their level.</p></div>";
+    echo get_template_part('partials/phone-registration');
 }
 add_action('woocommerce_after_shop_loop', 'show_phone_registration');
