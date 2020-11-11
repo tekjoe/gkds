@@ -28,30 +28,28 @@
         or for students who can not make a weekly commitment. We offer 3 disciplines of dance on a weekly basis. See
         each class description below and just drop-in anytime!</p>
       <div class="column">
-        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>childrens_latin_dance.jpg"
-          alt="Children's Latin Dance" />
+        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>dance-technique.png"
+          alt="Adult Dance Technique" />
         <h3>Dance Technique</h3>
-        <p>Latin dance class for kids. This class teaches leading and following as well as basic footwork in popular
-          Latin dances usually focusing on salsa.</p>
-        <a href="<?php echo site_url('/registration'); ?>" class="button">Check Availability</a>
+        <p>Improve your overall dance technique that will help you in any style of dance. We work with a ballet/jazz
+          base to improve flexibility, strength, center of balance, and much more.</p>
+        <a href="<?php echo site_url('/product/adult-dance-technique/'); ?>" class="button">Check Availability</a>
       </div>
       <div class="column">
-        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>childrens_ballet_jazz.jpg"
-          alt="Children's Ballet/Jazz" />
+        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>adult-bachata.jpg"
+          alt="Bachata Fundamentals" />
         <h3>Bachata Fundamentals</h3>
-        <p>Our ballet/jazz classes for children teach proper dance technique and dance training from a young age all the
-          way up to adults. We work on strength, stretching, ballet and jazz terminology, isolating, and overall
-          corporal awareness and coordination.</p>
-        <a href="<?php echo site_url('/registration'); ?>" class="button">Check Availability</a>
+        <p>In this class we teach the bachata basics and additional footwork as well as partner work. We teach out
+          students patterns that you can take social dancing for your next night out on the town.</p>
+        <a href="<?php echo site_url('/product/adult-bachata-fundamentals/'); ?>" class="button">Check Availability</a>
       </div>
       <div class="column">
-        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>childrens_ballet_jazz.jpg"
-          alt="Children's Ballet/Jazz" />
+        <img src="<?php echo get_template_directory_uri() . '/images/home-page/'; ?>adult_group.jpg"
+          alt="Saslsa Fundamentals" />
         <h3>Salsa Fundamentals</h3>
-        <p>Our ballet/jazz classes for children teach proper dance technique and dance training from a young age all the
-          way up to adults. We work on strength, stretching, ballet and jazz terminology, isolating, and overall
-          corporal awareness and coordination.</p>
-        <a href="<?php echo site_url('/registration'); ?>" class="button">Check Availability</a>
+        <p>In this fast-paced salsa group class we will definitely get you moving. We teach the proper techniques for
+          salsa footwork as well as turn patterns and how to properly lead and follow.</p>
+        <a href="<?php echo site_url('/product/adult-salsa-fundamentals/'); ?>" class="button">Check Availability</a>
       </div>
     </div>
 
@@ -66,21 +64,26 @@
         level. Our choreography groups meet twice a week and have the opportunity to perform as a team. See the groups
         we offer below and call ahead to register.</p>
       <div class="column">
-        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>childrens_latin_dance.jpg"
-          alt="Children's Latin Dance" />
+        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>ladies-latin-styling.jpg"
+          alt="Ladies Latin Styling Class" />
         <h3>Ladies Latin Styling</h3>
-        <p>Latin dance class for kids. This class teaches leading and following as well as basic footwork in popular
-          Latin dances usually focusing on salsa.</p>
-        <a href="<?php echo site_url('/registration'); ?>" class="button">Call to Register</a>
+        <p>This class is designed for women or for anyone wanting to learn feminine styling in Latin dance. Each season
+          we choose a different style of Latin dance for our choreography. Our ladies class focuses on feminine movement
+          and styling through core movement. All levels are welcome, however we do recommend those who join have a solid
+          understanding of basic salsa footwork patterns. We also recommend those who plan on performing to attend our
+          drop-in technique classes. Call to register for this class or to see when our next choreography begins.</p>
+        <a href="<?php echo site_url('/register-online'); ?>" class="button">Call to Register</a>
       </div>
       <div class="column">
-        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>childrens_ballet_jazz.jpg"
-          alt="Children's Ballet/Jazz" />
+        <img src="<?php echo get_template_directory_uri() . '/images/home-page/'; ?>adult_choreo.jpg"
+          alt="Salsa Dance Classes" />
         <h3>Salsa 1, 2, and 3</h3>
-        <p>Our ballet/jazz classes for children teach proper dance technique and dance training from a young age all the
-          way up to adults. We work on strength, stretching, ballet and jazz terminology, isolating, and overall
-          corporal awareness and coordination.</p>
-        <a href="<?php echo site_url('/registration'); ?>" class="button">Call to Register</a>
+        <p>Due to high demand we offer 3 levels of salsa choreography. Level placement is determined by our staff.
+          Choreography groups begin periodically throughout the year and require prior registration. All of our groups
+          require a basic knowledge of our Salsa level A curriculum. These groups allow our students to expand their
+          knowledge of salsa movement and provide performance and competition opportunities at the higher levels. All
+          groups meet twice weekly.</p>
+        <a href="<?php echo site_url('/register-online'); ?>" class="button">Call to Register</a>
       </div>
     </div>
 

@@ -508,6 +508,7 @@ body a {
   padding: 1rem 2rem;
   display: inline-block;
   width: auto;
+  cursor: pointer;
 }
 
 .wpcf7-response-output {
@@ -610,8 +611,13 @@ body a {
   flex: 1;
   margin-bottom: 1rem;
 }
-.phone-registration h2 {
+.phone-registration__title {
+  flex-basis: 100%;
   font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.phone-registration h3 {
+  font-size: 1.5rem;
   margin-bottom: 1.125rem;
 }
 .phone-registration p {
@@ -634,6 +640,7 @@ body a {
 @media (min-width: 768px) {
   .phone-registration {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .phone-registration .column {
     margin-bottom: 0;
@@ -641,8 +648,11 @@ body a {
   .phone-registration .column:not(:last-of-type) {
     margin-right: 1rem;
   }
-  .phone-registration h2 {
+  .phone-registration__title {
     font-size: 3rem;
+  }
+  .phone-registration h3 {
+    font-size: 2rem;
   }
 }
 
@@ -921,9 +931,11 @@ body a {
 .shtf .message {
   margin-bottom: 0;
   line-height: normal;
+  margin-left: auto;
 }
 .shtf .close-button {
   display: block;
+  margin-left: auto;
   cursor: pointer;
 }
 .shtf .close-button img {
@@ -1650,7 +1662,7 @@ button.button {
 }
 @media (min-width: 1024px) {
   .about__masthead {
-    height: 450px;
+    height: 600px;
   }
   .about__masthead h1 {
     font-size: 4rem;
@@ -1777,13 +1789,13 @@ button.button {
 }
 @media (min-width: 1024px) {
   .baila__masthead {
-    height: 450px;
+    height: 600px;
   }
   .baila__masthead .baila__cta img {
     object-fit: cover;
     object-position: top;
-    height: 450px;
-    max-height: 450px;
+    height: 600px;
+    max-height: 600px;
   }
 }
 
@@ -1838,11 +1850,6 @@ button.button {
   margin-bottom: 4rem;
   justify-content: center;
 }
-@media (min-width: 1024px) {
-  .baila__guest-artists {
-    grid-column: 2/-2;
-  }
-}
 
 .guest-artist {
   position: relative;
@@ -1864,6 +1871,11 @@ button.button {
 @media (min-width: 768px) {
   .guest-artist {
     flex-basis: calc(33% - 2rem);
+  }
+}
+@media (min-width: 1024px) {
+  .guest-artist {
+    height: 350px;
   }
 }
 
@@ -1893,34 +1905,8 @@ button.button {
   color: white;
 }
 
-.contact__masthead {
-  grid-column: 1/-1;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 100%, rgba(255, 255, 255, 0) 100%), url("../../../../../wp-content/themes/gkds/images/contact_page_header.png");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 325px;
-}
-.contact__masthead h1 {
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: 3rem;
-  font-size: 3rem;
-  position: relative;
-}
-@media (min-width: 1024px) {
-  .contact__masthead {
-    height: 450px;
-  }
-  .contact__masthead h1 {
-    font-size: 4rem;
-  }
-}
-
 .grid__contact {
+  margin-top: 5rem;
   margin-bottom: 5rem;
   grid-template-rows: repeat(3, minmax(0, auto));
   grid-gap: 1rem;
@@ -1945,10 +1931,10 @@ button.button {
   grid-column: span 4;
 }
 .contact-form__form, .contact-form__details {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 .contact-form__form h2, .contact-form__details h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 2rem;
 }
 .contact-form__form {
@@ -2226,7 +2212,7 @@ button.button {
 @media (min-width: 1024px) {
   .adult-classes__masthead,
 .childrens-classes__masthead {
-    height: 450px;
+    height: 600px;
   }
   .adult-classes__masthead h1,
 .childrens-classes__masthead h1 {
@@ -2338,6 +2324,9 @@ button.button {
     height: 350px;
     margin-bottom: 2rem;
   }
+  .class-grid p {
+    padding-right: 1rem;
+  }
 }
 @media (min-width: 1024px) {
   .class-grid {
@@ -2348,6 +2337,7 @@ button.button {
   }
   .class-grid p {
     font-size: 1.25rem;
+    padding-right: 2rem;
   }
 }
 

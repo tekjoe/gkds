@@ -1,11 +1,6 @@
 <?php get_header(); ?>
 <main class="main">
   <?php get_template_part('partials/embellishments'); ?>
-  <section class="grid grid__contact--full-width">
-    <div class="contact__masthead">
-      <h1>Contact Us</h1>
-    </div>
-  </section>
   <section class="grid grid__contact">
     <div class="contact-form__form">
       <div class="form-container">

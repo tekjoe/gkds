@@ -1,7 +1,9 @@
 <footer class="footer">
   <div class="footer__content footer__content--left">
-    <img src="<?php echo get_template_directory_uri() . '/images/'; ?>gkds_logo.png"
-      alt="Gustavo Krystal Dance Studio" />
+    <a href="<?php echo site_url('/'); ?>">
+      <img src="<?php echo get_template_directory_uri() . '/images/'; ?>gkds_logo.png"
+        alt="Gustavo Krystal Dance Studio" />
+    </a>
     <div class="info">
       <p>
         Gustavo Krystal Dance Studio is Milwaukee's premier Latin dance studio, with dance classes for people from all

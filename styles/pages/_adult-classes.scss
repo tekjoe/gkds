@@ -32,7 +32,6 @@
 .adult-classes__masthead,
 .childrens-classes__masthead {
   grid-column: 1/-1;
-
   background-size: cover;
   background-position: center;
   display: flex;
@@ -74,7 +73,7 @@
         top: 5.5rem;
       }
     }
-    height: 450px;
+    height: 600px;
   }
 }
 
@@ -164,6 +163,9 @@
         margin-bottom: 2rem;
       }
     }
+    p {
+      padding-right: 1rem;
+    }
   }
   @media (min-width: 1024px) {
     grid-column: 2/-2;
@@ -172,6 +174,7 @@
     }
     p {
       font-size: 1.25rem;
+      padding-right: 2rem;
     }
   }
 }

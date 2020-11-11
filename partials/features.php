@@ -11,7 +11,7 @@
           Our wide range of dance classes offer something for all skill levels. Whether you're a novice or an expert,
           you've come to the right place.
         </p>
-        <a href="<?php echo site_url('/registration'); ?>" class="button">Check Availability</a>
+        <a href="<?php echo site_url('/register-online'); ?>" class="button">Check Availability</a>
       </div>
     </div>
     <div class="feature feature--reverse">
@@ -26,7 +26,7 @@
           Our mission is to provide the highest level of artistic education and to inspire our students. We're
           confident we have a dance class you'll enjoy.
         </p>
-        <a href="<?php echo site_url('/registration'); ?>" class="button">Check Availability</a>
+        <a href="<?php echo site_url('/register-online'); ?>" class="button">Check Availability</a>
       </div>
     </div>
     <div class="feature">

@@ -22,8 +22,9 @@
   <header class="header">
     <nav class="desktop-nav">
       <div class="logo">
-        <img src="<?php echo get_template_directory_uri() . '/images/'; ?>gkds_logo.png"
-          alt="Gustavo Krystal Dance Studio Logo" />
+        <a href="<?php echo site_url('/'); ?>"><img
+            src="<?php echo get_template_directory_uri() . '/images/'; ?>gkds_logo.png"
+            alt="Gustavo Krystal Dance Studio Logo" /></a>
         <span>414-294-9494</span>
       </div>
       <ul class="menu">

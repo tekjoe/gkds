@@ -1,34 +1,5 @@
-.contact__masthead {
-  grid-column: 1/-1;
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.3) 100%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    url("../../../../../wp-content/themes/gkds/images/contact_page_header.png");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 325px;
-  h1 {
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: 3rem;
-    font-size: $h2;
-    position: relative;
-  }
-  @media (min-width: 1024px) {
-    h1 {
-      font-size: $h1;
-    }
-    height: 450px;
-  }
-}
-
 .grid__contact {
+  margin-top: 5rem;
   margin-bottom: 5rem;
   grid-template-rows: repeat(3, minmax(0, auto));
   grid-gap: 1rem;
@@ -53,9 +24,9 @@
   }
   &__form,
   &__details {
-    padding: 2rem;
+    padding: 1.5rem;
     h2 {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       font-size: $h3;
     }
   }
@@ -66,7 +37,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     p {
       margin-bottom: 2rem;
       color: $white;
