@@ -48,7 +48,7 @@
           </ul>
         </li>
       </ul>
-      <a href="<?php echo site_url('/registration');?>" class="button cta">Start Dancing</a>
+      <a href="<?php echo site_url('/register-online');?>" class="button cta">Start Dancing</a>
     </nav>
     <?php get_template_part('partials/mobile-nav'); ?>
   </header>
