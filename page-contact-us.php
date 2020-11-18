@@ -22,8 +22,7 @@
         <ul>
           <li><strong>Location:</strong> 132 W Mineral St</li>
           <li><strong>Phone:</strong> 414-294-9494</li>
-          <li><strong>Email:</strong> <a
-              href="mailto:gustavokrystaldancestudio@gmail.com">gustavokrystaldancestudio@gmail.com</a></li>
+          <li><strong>Email:</strong> <a href="mailto:gustavokrystaldancestudio@gmail.com">gkds@gmail.com</a></li>
         </ul>
       </div>
     </div>
