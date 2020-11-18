@@ -6,7 +6,7 @@
         Dance classes for people from all walks of life – beginners,
         experts, and everyone in between.
       </p>
-      <a href="<?php echo site_url('/register-online')?>" class="button">Start Dancing</a>
+      <a href="<?php echo site_url('/register-online'); ?>" class="button">Start Dancing</a>
     </div>
     <div class="masthead__call-to-action video">
       <div class="video-overlay">

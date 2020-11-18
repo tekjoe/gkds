@@ -32,6 +32,7 @@
         <li><a href="<?php echo site_url('/about'); ?>">About Us</a></li>
         <li><a href="<?php echo site_url('/adult-classes'); ?>">Adult Classes</a></li>
         <li><a href="<?php echo site_url('/childrens-classes'); ?>">Children's Classes</a></li>
+        <li><a href="<?php echo site_url('/register-online'); ?>">Register Online</a></li>
         <li><a href="<?php echo site_url('/baila-milwaukee'); ?>">Baila Milwaukee</a></li>
         <li><a href="https://squareup.com/gift/ZTW903YCEDYTR/order" rel="noopener noreferrer" target="_blank">Gift
             Cards</a></li>
@@ -47,9 +48,6 @@
           </ul>
         </li>
       </ul>
-
-
-
       <a href="<?php echo site_url('/registration');?>" class="button cta">Start Dancing</a>
     </nav>
     <?php get_template_part('partials/mobile-nav'); ?>

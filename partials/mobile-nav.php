@@ -10,7 +10,9 @@
     <ul>
       <li class="menu-item"><a href="<?php echo site_url('/'); ?>">Home</a></li>
       <li class="menu-item"><a href="<?php echo site_url('/about'); ?>">About Us</a></li>
-      <li class="menu-item"><a href="<?php echo site_url('/classes'); ?>">Classes</a></li>
+      <li class="menu-item"><a href="<?php echo site_url('/adult-classes'); ?>">Adult Classes</a></li>
+      <li class="menu-item"><a href="<?php echo site_url('/childrens-classes'); ?>">Children's Classes</a></li>
+      <li class="menu-item"><a href="<?php echo site_url('/register-online'); ?>">Register Online</a></li>
       <li class="menu-item"><a href="<?php echo site_url('/baila-milwaukee'); ?>">Baila Milwaukee</a></li>
       <li class="menu-item"><a href="https://squareup.com/gift/ZTW903YCEDYTR/order" rel="noopener noreferrer"
           target="_blank">Gift

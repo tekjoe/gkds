@@ -20,9 +20,10 @@
       <div class="details-container">
         <h2>All Other Inquiries</h2>
         <ul>
-          <li><strong>Location:</strong> 123 W. Mineral St</li>
-          <li><strong>Phone:</strong> 262-123-4567</li>
-          <li><strong>Email:</strong> <a href="mailto:info@gkds.com">info@gkds.com</a></li>
+          <li><strong>Location:</strong> 132 W Mineral St</li>
+          <li><strong>Phone:</strong> 414-294-9494</li>
+          <li><strong>Email:</strong> <a
+              href="mailto:gustavokrystaldancestudio@gmail.com">gustavokrystaldancestudio@gmail.com</a></li>
         </ul>
       </div>
     </div>

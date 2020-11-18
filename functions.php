@@ -52,8 +52,6 @@ add_action('wp_enqueue_scripts', 'gkds_setup');
 add_action('after_setup_theme', 'woocommerce_support');
 add_filter('woocommerce_product_add_to_cart_text', 'customize_shop_button_text', 10, 2);
 
-
-
 function show_phone_registration()
 {
     echo get_template_part('partials/phone-registration');
