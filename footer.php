@@ -20,8 +20,8 @@
       <ul>
         <li><a href="https://www.facebook.com/GustavoKrystalDanceStudio/" target="_blank" rel="noreferrer"
             rel="noopener"><i class="fab fa-facebook fa-lg"></i></a></li>
-        <li><a href="https://www.instagram.com/gustavokrystaldance/" target="_blank" rel="noreferrer" rel="noopener"><i
-              class="fab fa-instagram fa-lg"></i></a></li>
+        <li><a href="https://www.instagram.com/gustavokrystaldanceofficial/" target="_blank" rel="noreferrer"
+            rel="noopener"><i class="fab fa-instagram fa-lg"></i></a></li>
         <li><a href="https://www.youtube.com/channel/UCdZrQytkuj9pQfcEoNR22XQ" target="_blank" rel="noreferrer"
             rel="noopener"><i class="fab fa-youtube fa-lg"></a></i></li>
       </ul>
